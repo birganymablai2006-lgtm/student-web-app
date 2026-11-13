@@ -2,6 +2,8 @@ import { neon } from '@neondatabase/serverless';
 import { revalidatePath } from 'next/cache';
 import { connection } from 'next/server';
 
+export const instant = false;
+
 async function addMessage(formData: FormData) {
   'use server';
 
